@@ -1,0 +1,4 @@
+VCC:C=circuit（电路），即接入电路的电压。
+VDD：D=device(设备)，设备的工作电压。
+VSS：S=series（系列），即公共接地电压。
+后面再加上一个-a，analog（模拟），即模拟电压。
