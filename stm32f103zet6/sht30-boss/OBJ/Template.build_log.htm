@@ -1,0 +1,112 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: x w, xw, LIC=Q7GX7-EIRGT-68RFC-7IUTX-FC8LC-P8JJX
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  D:\kiel-v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\kiel-v5\work\stm32f103zet6\sht30-boss\USER\Template.uvprojx
+Project File Date:  08/16/2017
+
+<h2>Output:</h2>
+Build target 'Template'
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling core_cm3.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling LED.c...
+compiling i2c_hal.c...
+..\HARDWARE\i2c\i2c_hal.c(35): error:  #20: identifier "GPIOB" is undefined
+        SDA_OPEN(sensor);                  // I2C-bus idle mode SDA released
+..\HARDWARE\i2c\i2c_hal.c(57): error:  #20: identifier "GPIOB" is undefined
+        SDA_OPEN(sensor);
+..\HARDWARE\i2c\i2c_hal.c(58): warning:  #223-D: function "DelayMicroSeconds" declared implicitly
+        DelayMicroSeconds(1);
+..\HARDWARE\i2c\i2c_hal.c(70): error:  #20: identifier "GPIOB" is undefined
+        SCL_LOW(sensor);
+..\HARDWARE\i2c\i2c_hal.c(71): warning:  #223-D: function "DelayMicroSeconds" declared implicitly
+        DelayMicroSeconds(1);
+..\HARDWARE\i2c\i2c_hal.c(87): error:  #20: identifier "GPIOB" is undefined
+                if((mask & txByte) == 0) SDA_LOW(sensor); // masking txByte, write bit to SDA-Line
+..\HARDWARE\i2c\i2c_hal.c(89): warning:  #223-D: function "DelayMicroSeconds" declared implicitly
+                DelayMicroSeconds(1);               // data set-up time (t_SU;DAT)
+..\HARDWARE\i2c\i2c_hal.c(95): error:  #20: identifier "GPIOB" is undefined
+        SDA_OPEN(sensor);                           // release SDA-line
+..\HARDWARE\i2c\i2c_hal.c(97): warning:  #223-D: function "DelayMicroSeconds" declared implicitly
+        DelayMicroSeconds(1);                 // data set-up time (t_SU;DAT)
+..\HARDWARE\i2c\i2c_hal.c(110): error:  #20: identifier "GPIOB" is undefined
+        SDA_OPEN(sensor);                            // release SDA-line
+..\HARDWARE\i2c\i2c_hal.c(114): warning:  #223-D: function "DelayMicroSeconds" declared implicitly
+                DelayMicroSeconds(1);                // clock set-up time (t_SU;CLK)
+..\HARDWARE\i2c\i2c_hal.c(123): warning:  #223-D: function "DelayMicroSeconds" declared implicitly
+        DelayMicroSeconds(1);                  // data set-up time (t_SU;DAT)
+..\HARDWARE\i2c\i2c_hal.c(138): error:  #20: identifier "GPIOB" is undefined
+        while(SCL_READ(sensor) == 0)
+..\HARDWARE\i2c\i2c_hal.c(141): warning:  #223-D: function "DelayMicroSeconds" declared implicitly
+                DelayMicroSeconds(1000);
+..\HARDWARE\i2c\i2c_hal.c: 7 warnings, 7 errors
+compiling sht3x.c...
+..\HARDWARE\sht3x\sht3x.c(238): warning:  #223-D: function "DelayMicroSeconds" declared implicitly
+          DelayMicroSeconds(1000);
+..\HARDWARE\sht3x\sht3x.c(412): warning:  #223-D: function "DelayMicroSeconds" declared implicitly
+        if(error == NO_ERROR) DelayMicroSeconds(50000); 
+..\HARDWARE\sht3x\sht3x.c(636): error:  #20: identifier "m_RunData" is undefined
+                        m_RunData.temp = 0;
+..\HARDWARE\sht3x\sht3x.c(643): error:  #20: identifier "m_RunData" is undefined
+                        m_RunData.temp = m_temp;
+..\HARDWARE\sht3x\sht3x.c(652): warning:  #1-D: last line of file ends without a newline
+  // =============(C) COPYRIGHT 2017 杭州卡丽智能科技股份有限公司=================
+..\HARDWARE\sht3x\sht3x.c: 3 warnings, 2 errors
+"..\OBJ\Template.axf" - 9 Error(s), 10 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\kiel-v5\work\stm32f103zet6\sht30-boss\USER\RTE
+  D:\kiel-v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+</pre>
+</body>
+</html>

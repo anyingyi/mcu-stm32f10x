@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\USER -I..\CORE -I..\STM32F10x_FWLib\inc -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HARDWARE\LED
+-I D:\kiel-v5\work\stm32f103zet6\dma\USER\RTE
+-I D:\kiel-v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+-I D:\kiel-v5\ARM\CMSIS\Include
+-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER
+-o ..\obj\dma.o --omf_browse ..\obj\dma.crf --depend ..\obj\dma.d "..\HARDWARE\dma\dma.c"

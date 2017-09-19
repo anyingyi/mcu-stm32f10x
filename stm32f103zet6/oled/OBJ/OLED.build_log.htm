@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: x w, xw, LIC=Q7GX7-EIRGT-68RFC-7IUTX-FC8LC-P8JJX
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  D:\kiel-v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+D:\kiel-v5\work\stm32f103c8t6\oled\USER\OLED.uvprojx
+Project File Date:  07/19/2017
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+..\HARDWARE\OLED\oled.h(45): warning:  #1295-D: Deprecated declaration Picture - give arg types
+  void Picture();
+..\HARDWARE\OLED\oled.h(46): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
+  void IIC_Start();
+..\HARDWARE\OLED\oled.h(47): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
+  void IIC_Stop();
+..\HARDWARE\OLED\oled.h(52): warning:  #1295-D: Deprecated declaration IIC_Wait_Ack - give arg types
+  void IIC_Wait_Ack();
+main.c(56): warning:  #9-D: nested comment is not allowed
+                                /*      delay_ms(8000);
+main.c(25): warning:  #177-D: variable "t" was declared but never referenced
+    {   u8 t;
+main.c(72): warning:  #1-D: last line of file ends without a newline
+        
+main.c: 7 warnings, 0 errors
+compiling oled.c...
+..\HARDWARE\OLED\oled.h(45): warning:  #1295-D: Deprecated declaration Picture - give arg types
+  void Picture();
+..\HARDWARE\OLED\oled.h(46): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
+  void IIC_Start();
+..\HARDWARE\OLED\oled.h(47): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
+  void IIC_Stop();
+..\HARDWARE\OLED\oled.h(52): warning:  #1295-D: Deprecated declaration IIC_Wait_Ack - give arg types
+  void IIC_Wait_Ack();
+..\HARDWARE\OLED\oled.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=6052 RO-data=2408 RW-data=948 ZI-data=1836  
+FromELF: creating hex file...
+"..\OBJ\OLED.axf" - 0 Error(s), 11 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\kiel-v5\work\stm32f103c8t6\oled\USER\RTE
+  D:\kiel-v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  D:\kiel-v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+</pre>
+</body>
+</html>
